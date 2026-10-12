@@ -1,0 +1,47 @@
+query cases($after: String, $pageSize: Int, $whereClause: Case_Filter, $orderBy: Case_OrderBy) {
+  uiapi {
+    query {
+      Case(after: $after, first: $pageSize, orderBy: $orderBy, where: $whereClause) {
+        totalCount
+        pageInfo {
+          hasPreviousPage
+          hasNextPage
+          startCursor
+          endCursor
+          __typename
+        }
+        edges {
+          cursor
+          node {
+            Id
+            CaseNumber {
+              value
+              displayValue
+              __typename
+            }
+            Subject {
+              value
+              displayValue
+              __typename
+            }
+            Status {
+              value
+              displayValue
+              __typename
+            }
+            CreatedDate {
+              value
+              displayValue
+              __typename
+            }
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

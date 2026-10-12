@@ -1,0 +1,12 @@
+Case Number: 12345
+Subject: Security Alert Detected
+Status: Open
+Severity: High
+Product Name: Example DLP
+Open Date: 2023-10-01
+Assigned To: security@company.com
+Case URL: https://support.example.com/case/12345
+
+This is a notification about a security incident.
+
+Action Required: Please review and take necessary steps.

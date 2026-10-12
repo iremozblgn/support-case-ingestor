@@ -1,0 +1,317 @@
+query cases($after: String, $pageSize: Int, $whereClause: Case_Filter, $orderBy: Case_OrderBy) {
+  uiapi {
+    query {
+      Case(after: $after, first: $pageSize, orderBy: $orderBy, where: $whereClause) {
+        totalCount
+        pageInfo {
+          hasPreviousPage
+          hasNextPage
+          startCursor
+          endCursor
+          __typename
+        }
+        edges {
+          cursor
+          node {
+            Id
+            Subject {
+              value
+              __typename
+              displayValue
+            }
+            CreatedBy {
+              Id
+              Name {
+                value
+                __typename
+                displayValue
+              }
+              ... on Record {
+                __typename
+                Id
+                DisplayValue
+                ApiName
+                WeakEtag
+                LastModifiedById {
+                  __typename
+                  value
+                  displayValue
+                }
+                LastModifiedDate {
+                  __typename
+                  value
+                  displayValue
+                }
+                SystemModstamp {
+                  __typename
+                  value
+                  displayValue
+                }
+                ldsRecordTypeId: RecordTypeId(fallback: true) {
+                  __typename
+                  value
+                  displayValue
+                }
+              }
+            }
+            Account {
+              Id
+              Name {
+                value
+                __typename
+                displayValue
+              }
+              ... on Record {
+                __typename
+                Id
+                DisplayValue
+                ApiName
+                WeakEtag
+                LastModifiedById {
+                  __typename
+                  value
+                  displayValue
+                }
+                LastModifiedDate {
+                  __typename
+                  value
+                  displayValue
+                }
+                SystemModstamp {
+                  __typename
+                  value
+                  displayValue
+                }
+                ldsRecordTypeId: RecordTypeId(fallback: true) {
+                  __typename
+                  value
+                  displayValue
+                }
+              }
+            }
+            CaseNumber {
+              value
+              __typename
+              displayValue
+            }
+            isCaseContactisUser__c {
+              value
+              __typename
+              displayValue
+            }
+            Description {
+              value
+              __typename
+              displayValue
+            }
+            LastReferencedDate {
+              value
+              displayValue
+              __typename
+            }
+            LastViewedDate {
+              value
+              displayValue
+              __typename
+            }
+            OwnerId {
+              value
+              __typename
+              displayValue
+            }
+            Case_Owner__c {
+              value
+              __typename
+              displayValue
+            }
+            CreatedDate {
+              value
+              displayValue
+              __typename
+            }
+            Status {
+              value
+              __typename
+              displayValue
+            }
+            Action_Required__c {
+              value
+              __typename
+              displayValue
+            }
+            Product_Name__c {
+              value
+              __typename
+              displayValue
+            }
+            Contact {
+              Id
+              Name {
+                value
+                __typename
+                displayValue
+              }
+              ... on Record {
+                __typename
+                Id
+                DisplayValue
+                ApiName
+                WeakEtag
+                LastModifiedById {
+                  __typename
+                  value
+                  displayValue
+                }
+                LastModifiedDate {
+                  __typename
+                  value
+                  displayValue
+                }
+                SystemModstamp {
+                  __typename
+                  value
+                  displayValue
+                }
+                ldsRecordTypeId: RecordTypeId(fallback: true) {
+                  __typename
+                  value
+                  displayValue
+                }
+              }
+            }
+            RecordType {
+              Id
+              Name {
+                value
+                __typename
+                displayValue
+              }
+              SobjectType {
+                value
+                __typename
+                displayValue
+              }
+              ... on Record {
+                __typename
+                Id
+                DisplayValue
+                ApiName
+                WeakEtag
+                LastModifiedById {
+                  __typename
+                  value
+                  displayValue
+                }
+                LastModifiedDate {
+                  __typename
+                  value
+                  displayValue
+                }
+                SystemModstamp {
+                  __typename
+                  value
+                  displayValue
+                }
+                ldsRecordTypeId: RecordTypeId(fallback: true) {
+                  __typename
+                  value
+                  displayValue
+                }
+              }
+            }
+            Priority {
+              value
+              __typename
+              displayValue
+            }
+            IsClosed {
+              value
+              __typename
+              displayValue
+            }
+            ClosedDate {
+              value
+              displayValue
+              __typename
+            }
+            Partners_Customer_Account__c {
+              value
+              __typename
+              displayValue
+            }
+            Partners_Customer_Account__r {
+              Name {
+                value
+                __typename
+                displayValue
+              }
+              ... on Record {
+                __typename
+                Id
+                DisplayValue
+                ApiName
+                WeakEtag
+                LastModifiedById {
+                  __typename
+                  value
+                  displayValue
+                }
+                LastModifiedDate {
+                  __typename
+                  value
+                  displayValue
+                }
+                SystemModstamp {
+                  __typename
+                  value
+                  displayValue
+                }
+                ldsRecordTypeId: RecordTypeId(fallback: true) {
+                  __typename
+                  value
+                  displayValue
+                }
+              }
+            }
+            isPartnerCustomer__c {
+              value
+              __typename
+              displayValue
+            }
+            ... on Record {
+              __typename
+              Id
+              DisplayValue
+              ApiName
+              WeakEtag
+              LastModifiedById {
+                __typename
+                value
+                displayValue
+              }
+              LastModifiedDate {
+                __typename
+                value
+                displayValue
+              }
+              SystemModstamp {
+                __typename
+                value
+                displayValue
+              }
+              ldsRecordTypeId: RecordTypeId(fallback: true) {
+                __typename
+                value
+                displayValue
+              }
+            }
+          }
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

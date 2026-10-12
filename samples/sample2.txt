@@ -1,0 +1,12 @@
+Case #: 67890
+Subject: Routine Maintenance Notification
+Status: Closed
+Severity: Low
+Product: Example Web Security
+Open Date: 2023-09-15
+Recipient: admin@company.com
+URL: https://support.example.com/case/67890
+
+Maintenance completed successfully.
+
+No further action needed.

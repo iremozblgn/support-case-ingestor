@@ -1,0 +1,8 @@
+Case Number: 00986235
+Severity:Severity 3
+Open Date:4/10/2026, 10:36 AM
+Record Type: Technical Support
+Subject: [Turk Telekomunikasyon A S]CloudApp - Disabled Not Working
+Status: Awaiting Customer Awaiting Customer
+Product Name: Web Security
+Contact Name:Sami Gomecoglu

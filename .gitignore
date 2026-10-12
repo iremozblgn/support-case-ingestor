@@ -1,0 +1,17 @@
+.env
+.playwright-support_portal-profile/
+debug/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+auth.json
+network_log.json
+browser_request.curl
+browser_request_full.json
+browser_message.json
+debug_cases.html
+debug_cases.png
+__pycache__/
+*/__pycache__/
+*.pyc
